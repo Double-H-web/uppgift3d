@@ -6,12 +6,6 @@ body{
     font-size: large;
 }
 
-header{
-    background-color:darkgray;
-    padding: 0;
-    margin: 0;
-}
-
 fieldset{
     width: 30%;
     height: 30%;
@@ -22,4 +16,11 @@ fieldset{
     width: 32%;
     height: 10em;
     margin: auto;
+}
+
+#submit, #reset {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: medium;
+    cursor: pointer;
 }
