@@ -6,12 +6,16 @@
     <title>Supportformulär</title>
     </head>
 <body>
-    <h1>Supportformulär</h1>
-    <p>Här kan du skicka ett ärende till vår supportavdelning.</p>
-    <!--Formulär start-->
-    <form action="https://swplayground.ltu.se/resources/parse_form.php" method="post">
-    <!--Action atributet berättar vart användaren blir skickad efter att ha klickat submit. 
-    Method specificerar sättet ett formulär är skickat.-->
+    <header>
+        <h1>Supportformulär</h1>
+        <p>Här kan du skicka ett ärende till vår supportavdelning.</p>
+        <!--Formulär start-->    
+        <form action="https://swplayground.ltu.se/resources/parse_form.php" method="post">
+        <!--Action atributet berättar vart användaren blir skickad efter att ha klickat submit. 
+        Method specificerar sättet ett formulär är skickat.-->
+    </header>
+
+    <section>
         <fieldset>
             <legend>Personlig Information</legend>
             <label for="namn"> Ditt namn: </label> <br>
@@ -28,9 +32,9 @@
             <label for="email">E-post:</label> <br>
             <input type="email" id="email" name="email" required>
             </fieldset>
-
+    </section>
         <br> <br>
-
+    <section>
         <label for="prioritet">Prioritet:</label> <br>
         <select name="prioritet" id="prioritet">
             <option value="1">Låg</option>
@@ -38,8 +42,9 @@
             <option value="3">Hög</option>
         </select>
         <!--Select använder man för att skapa drop-down listor med option lägger man till de olika alternativen-->
-
+    </section>
         <br> <br>
+    <section>
         <!--fieldset är till för att gruppera relaterade form controls-->
         <fieldset>
             <legend>Tilldela till ort:</legend>
@@ -52,12 +57,13 @@
             <input type="radio" id="lule" name="ort" value="lule">
             <label for="lule">Luleå</label>
         </fieldset> 
+    </section>
     <br> <br>
         <!--Med id  och for kopplar man ihop olika label och input element så att det går att fylla i boxen genom att också klicka på texten.
         Samt hjälper man med tillgängligheten för skärmläsare.
         Value berättar vad för info väljs och name används för att hitta den specifika datan efter den är ivägskickad.
         Radio skapar en ifyllnings box.-->
-        
+    <section>  
         <label for="kategori">Kategori</label> <br>
         <select name="kategori" id="kategori">
             <option value="fakt">Fakturering</option>
@@ -65,9 +71,9 @@
             <option value="tel">Telefoni</option>
             <option value="epost">E-post</option>
         </select>
-
+    </section>  
         <br> <br>
-
+    <section>
         <label for="rubrik">Rubrik</label> <br>
         <input type="text" id="rubrik" name="rubrik" required>
 
@@ -75,15 +81,17 @@
 
         <label for="beskrivning">Beskrivning</label> <br>
         <textarea name="beskrivning" id="beskrivning" minlength="10" placeholder="Beskriv ditt problem i minst 10 tecken" ></textarea> 
+    </section>
         <!--textarea gör en textruta för längre svar. Minlength specificerar hur många tecken det minst måste vara för att kunna skicka iväg formuläret.
         Placeholder lägger till en beskrivande text i rutan.-->
         <br> <br>
-        
+    <footer>   
         <input type="submit" name="skicka" value="Submit">
         <input type="reset" name="rensa" value="Reset">
         <!--Submit skapar en knapp för att skicka iväg formuläret till den tidigare specifierade servern.
         Reset tar bort all ifylld information.-->
 </form>
 <!--Formulär slut-->
+    </footer>
 </body>
 </html>
