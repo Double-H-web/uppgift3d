@@ -69,8 +69,9 @@
         <br> <br>
 
         <label for="beskrivning">Beskrivning</label> <br>
-        <textarea name="beskrivning" id="beskrivning" rows="10" cols="30"></textarea> 
-        <!--textarea gör en textruta för längre svar. Rows och cols säger hur stor rutan ska vara.-->
+        <textarea name="beskrivning" id="beskrivning" minlength="10" placeholder="Beskriv ditt problem" ></textarea> 
+        <!--textarea gör en textruta för längre svar. Minlength specificerar hur många tecken det minst måste vara för att kunna skicka iväg formuläret.
+        Placeholder lägger till en beskrivande text i rutan.-->
         <br> <br>
         
         <input type="submit" name="skicka" value="Submit">
