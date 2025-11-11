@@ -35,16 +35,19 @@
         <!--Select använder man för att skapa drop-down listor med option lägger man till de olika alternativen-->
 
         <br> <br>
-
-        <label>Tilldela till ort:</label> <br>
-        <input type="radio" id="gbg" name="ort" value="gbg">
-        <label for="gbg">Göteborg</label><br>
-        <input type="radio" id="sthlm" name="ort" value="sthlm">
-        <label for="sthlm">Stockholm</label><br>
-        <input type="radio" id="ume" name="ort" value="ume">
-        <label for="ume">Umeå</label><br>
-        <input type="radio" id="lule" name="ort" value="lule">
-        <label for="lule">Luleå</label> <br> <br>
+        <!--fieldset är till för att gruppera relaterade form controls-->
+        <fieldset>
+            <legend>Tilldela till ort:</legend> <br>
+            <input type="radio" id="gbg" name="ort" value="gbg">
+            <label for="gbg">Göteborg</label><br>
+            <input type="radio" id="sthlm" name="ort" value="sthlm">
+            <label for="sthlm">Stockholm</label><br>
+            <input type="radio" id="ume" name="ort" value="ume">
+            <label for="ume">Umeå</label><br>
+            <input type="radio" id="lule" name="ort" value="lule">
+            <label for="lule">Luleå</label>
+        </fieldset> 
+    <br> <br>
         <!--Med id  och for kopplar man ihop olika label och input element så att det går att fylla i boxen genom att också klicka på texten.
         Samt hjälper man med tillgängligheten för skärmläsare.
         Value berättar vad för info väljs och name används för att hitta den specifika datan efter den är ivägskickad.
