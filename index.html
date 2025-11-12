@@ -47,8 +47,10 @@ vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
         För att användaren ska veta vilket format svaret ska vara i har jag lagt till en plpaceholder som visar att svaret kräver 10 karaktärer utan mellanslag.
         Email attributet accepterar bara svar i formatet av en email adress.-->
 
+        <!--Jag lade till en class till alla "rubriker" så jag enkelt kunde ändra deras utseende i css.-->
+
         <fieldset>
-            <legend>Personlig Information</legend>
+            <legend class="one">Personlig Information</legend>
             <label for="namn"> Ditt namn: </label> <br>
             <input type="text" id="namn" name="namn" required> 
 
@@ -82,7 +84,7 @@ vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
         och göra hela ordet går att klicka för att fylla i rutan.-->
 
         <fieldset>
-            <legend>Tilldela till ort:</legend>
+            <legend class="one">Tilldela till ort:</legend>
             <input type="radio" id="gbg" name="ort" value="gbg">
             <label for="gbg">Göteborg</label><br>
             <input type="radio" id="sthlm" name="ort" value="sthlm">

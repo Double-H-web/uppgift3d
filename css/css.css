@@ -33,9 +33,17 @@ fieldset{
     margin: auto;
 }
 
+/*.one skapar regler för alla element med classen one.
+Jag använde denna class för alla rubriker på sidan för att göra dem mer framträdande. Font weight bestämmer hur tjock texten ska vara.
+Jag valde bold för att göra rubrikerna tydligare och mer framträdande.*/
+
 .one{
     font-weight: bold;
 }
+
+/*Jag ökade drop-down menyernas storlek för att matcha text rutornas bredd.
+Jag lade till lite extra margin för att göra utseendet luftigare.
+Jag centrerade texten och ökade storleken för bättre synlighet.*/
 
 select{
     width: 23%;
@@ -44,11 +52,12 @@ select{
     font-size: large;
 }
 
+/*Jag ökade text rutan för namn, telefon och emails storlek sedan matchade jag bredden på de till rubrik och beskrivning så alla textrutor är lika breda.*/
+
 #namn, #telefon, #email{
     width: 75%;
 }
 
-/*Jag ökade text rutan för namn, telefon och emails storlek sedan matchade jag bredden på de till rubrik och beskrivning så alla textrutor är lika breda.*/
 
 #rubrik{
     width: 23%;
