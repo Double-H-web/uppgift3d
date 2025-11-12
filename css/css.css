@@ -33,7 +33,7 @@ fieldset{
     margin: auto;
 }
 
-#prioritet, #kategori, #rubrik, #beskrivning{
+.one{
     font-weight: bold;
 }
 
