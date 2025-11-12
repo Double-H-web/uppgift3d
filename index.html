@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <!--Doctype specificerar vilken dokumenttyp det är, följt av html lang, där du specificerar språket.-->
+
 <head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/css.css" type="text/css" rel="stylesheet">
     <title>Supportformulär</title>
 </head>
+
 <!--charset berättar vilken typ av teckenkodning datorn ska använda när den visar dokumentet.
 Genom att inkludera name=viewport m.m. berättar vi för webben att den ska skala innehållet efter skärmens storlek.
 Link elementet länkar till ett css dokument som berättar för webben hur html koden ska visas upp.
 Title innehåller det som visas i sidans titel-bar.-->
+
 <body>
+
+<!--Genom att lägga till avdelningar i html dokumentet, så som header och main, hjälper du screenreaders dela upp
+vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
+   
     <header>
         <h1>Supportformulär</h1>
         <p>Här kan du skicka ett ärende till vår supportavdelning.</p> 
     </header>
-    <!--Formulär start-->    
+
+    <!--Formulär start--> 
+
+    <main>  
     <form action="https://swplayground.ltu.se/resources/parse_form.php" method="post">
+
+        <!--Form berättar att följande kod är ett formulär och action berättar vad som händer när användaren klickar på submit. 
+        I det här fallet skickas de till en annan webbsida som hanterar den data som har matats in i formuläret.
+        Method specificerar hur formuläret är skickat.-->
+
+        <!--Fieldset omringar en grupp relaterade form element i en border.
+        Legend ger denna gruppering en rubrik.-->
+
+        <!--Label är till för att definiera en eller flera form element. Label hjälper också screenreaders då dessa kommer läsa upp
+        label elementet när användaren fokuserar på input elementet med samma id namn som label elementets for namn.-->
 
         <fieldset>
             <legend>Personlig Information</legend>
@@ -84,6 +105,7 @@ Title innehåller det som visas i sidans titel-bar.-->
         <input type="reset" name="rensa" value="Reset" id="reset">
 
     </form>
+    </main> 
 <!--Formulär slut-->
 </body>
 </html>
