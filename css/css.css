@@ -35,15 +35,17 @@ fieldset{
     width: 75%;
 }
 
+/*Jag ökade text rutan för namn, telefon och emails storlek sedan matchade jag bredden på de till rubrik och beskrivning så alla textrutor är lika breda.*/
+
 #rubrik{
-    width: 50%;
+    width: 23%;
 }
 
 /*#beskrivning skapar regler för alla element med idt beskrivning.
 I det här fallet handlar det om en textarea. Jag gjorde den större i både höjd och bredd.*/
 
 #beskrivning {
-    width: 32%;
+    width: 23%;
     height: 10em;
 }
 
