@@ -33,6 +33,10 @@ fieldset{
     margin: auto;
 }
 
+#prioritet, #kategori, #rubrik, #beskrivning{
+    font-weight: bold;
+}
+
 select{
     width: 23%;
     margin: 1%;
