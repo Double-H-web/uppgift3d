@@ -31,6 +31,10 @@ fieldset{
     margin: auto;
 }
 
+#namn, #telefon, #email {
+    width: 75%;
+}
+
 /*#beskrivning skapar regler för alla element med idt beskrivning.
 I det här fallet handlar det om en textarea. Jag gjorde den större i både höjd och bredd.*/
 
