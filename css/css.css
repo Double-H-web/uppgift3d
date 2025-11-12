@@ -31,7 +31,7 @@ fieldset{
     margin: auto;
 }
 
-#namn, #telefon, #email {
+#namn, #telefon, #email, #rubrik {
     width: 75%;
 }
 
