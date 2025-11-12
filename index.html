@@ -40,6 +40,13 @@ vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
         <!--Label är till för att definiera en eller flera form element. Label hjälper också screenreaders då dessa kommer läsa upp
         label elementet när användaren fokuserar på input elementet med samma id namn som label elementets for namn.-->
 
+        <!--Input elementet varierar beroende på vilket attribut värde det har. 
+        Text visas som en enkel text rad där användaren kan fylla i information.
+        Tel visas också som en enkel text rad men är till för telefonnummer och kan med pattern attributet låsas så den bara accepterar ett visst typ av svar.
+        I det här fallet tio nummer mellan noll till nio utan några mellanslag. 
+        För att användaren ska veta vilket format svaret ska vara i har jag lagt till en plpaceholder som visar att svaret kräver 10 karaktärer utan mellanslag.
+        Email attributet accepterar bara svar i formatet av en email adress.-->
+
         <fieldset>
             <legend>Personlig Information</legend>
             <label for="namn"> Ditt namn: </label> <br>
@@ -55,7 +62,10 @@ vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
             <label for="email">E-post:</label> <br>
             <input type="email" id="email" name="email" required>
         </fieldset>
+
         <br> <br>
+
+        <!--Select elementet skapar en drop-down meny med option som specificerar alternativen.-->
 
         <label for="prioritet">Prioritet:</label> <br>
         <select name="prioritet" id="prioritet">
@@ -66,6 +76,10 @@ vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
 
 
         <br> <br>
+
+        <!--Radio attributet visas som en ifyllbar ruta för multiple choice alternativ.
+        Genom att använda label i denna situation kan jag göra det enklare för det som har svårt att klicka på små ytor
+        och göra hela ordet går att klicka för att fylla i rutan.-->
 
         <fieldset>
             <legend>Tilldela till ort:</legend>
@@ -96,11 +110,17 @@ vad som är vad i dokumentet så de lättare kan göra sitt jobb.-->
 
         <br> <br>
 
+        <!--Textarea skapar en flerradig ruta för längre svar. 
+        Minlength berättar att svaret måste vara minst 10 karaktärer långt, vilket placeholdern berättar för användaren.-->
+
         <label for="beskrivning">Beskrivning</label> <br>
         <textarea name="beskrivning" id="beskrivning" minlength="10" placeholder="Beskriv ditt problem i minst 10 tecken" ></textarea> 
 
         <br> <br>
         
+        <!--Submit skapar en knapp som aktiverar form action och skickar iväg formuläret.
+        Reset rensar alla svar och återställer formuläret till default.-->
+
         <input type="submit" name="skicka" value="Submit" id="submit">
         <input type="reset" name="rensa" value="Reset" id="reset">
 
