@@ -31,8 +31,12 @@ fieldset{
     margin: auto;
 }
 
-#namn, #telefon, #email, #rubrik {
+#namn, #telefon, #email{
     width: 75%;
+}
+
+#rubrik{
+    width: 50%;
 }
 
 /*#beskrivning skapar regler för alla element med idt beskrivning.
