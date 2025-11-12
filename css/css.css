@@ -13,6 +13,8 @@ Jag tyckte det gav sidan ett estetiskt tilltalande utseende.*/
 
 body{
     font-family: Arial, sans-serif;
+    min-width: 50px; 
+    max-width: 100%;
     margin: 0;
     background-color: #f4f4f4;
     text-align: center;
@@ -32,7 +34,7 @@ fieldset{
 }
 
 select{
-    width: 19em;
+    width: 23%;
     margin: 1%;
     text-align: center;
     font-size: large;
