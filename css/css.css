@@ -1,11 +1,29 @@
+/*Body skapar regler för hur elementen i body ska se ut.
+Font family specificerar fonten samt font familjen ifall användaren inte skulle ha den specificerade fonten 
+så kan webben använda en annan font inom samma familj som användaren HAR installerad.
+Margin bestämmer avståndet mellan elementets ram och webbläsarens kant. Jag satte den till 0 för att
+ta bort det standard avståndet som webbläsaren lägger till.
+Background color bestämmer en bakgrundsfärg för hela webbplatsen. Jag valde en ljus grå då jag finner det 
+behåller professionalismen som vit bakgrund gör men att den är lite mjukare för ögat.
+Text align center centrerar all text på sidan vilket jag tycker gör det mer estetiskt tilltalande.
+Font size bestämmer text storleken. Jag valde large då det inte är mycket innehåll på sidan och texten är 
+i huvudfokus tycker jag att det passar att den är lite större än vanligt. Samt hjälper det de med synsvårigheter.
+Border lägger till en synlig ram runt hela webben. 
+Jag tyckte det gav sidan ett estetiskt tilltalande utseende.*/
+
 body{
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
     background-color: #f4f4f4;
     text-align: center;
     font-size: large;
     border: 1em solid black
 }
+
+/*Fieldset skapar regler för alla fieldset element.
+Jag förminskade höjden och bredden på elementen då jag tyckte det såg konstigt ut när de sträckte sig över hela sidan.
+Margin bestämmer utrymmet som ett element tar utanför den synliga ramen.
+Jag ställde in margin på auto så fieldset elementen skulle visas i mitten av webben, horisontellt */
 
 fieldset{
     width: 30%;
@@ -13,15 +31,24 @@ fieldset{
     margin: auto;
 }
 
+/*#beskrivning skapar regler för alla element med idt beskrivning.
+I det här fallet handlar det om en textarea. Jag gjorde den större i både höjd och bredd.*/
+
 #beskrivning {
     width: 32%;
     height: 10em;
-    margin: auto;
 }
 
+/*#submit och #reset skapar regler för elementen med idt submit och reset.
+Jag lade till padding för att göra knapparna större och mer klickvänliga.
+Margin ger de en större distans från bodyns ram.
+Jag valde att öka text storleken för att göra de extra tydliga.
+Cursor ändrar musens utseende när användaren hovrar över elementet. 
+Jag valde att ändra den till en pointer för att visa att det går att klicka elementen.*/
+
 #submit, #reset {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: medium;
+    padding: 1em 3em;
+    margin: 3%;
+    font-size: 1em;
     cursor: pointer;
 }
