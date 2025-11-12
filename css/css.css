@@ -1,6 +1,9 @@
 /*Body skapar regler för hur elementen i body ska se ut.
 Font family specificerar fonten samt font familjen ifall användaren inte skulle ha den specificerade fonten 
 så kan webben använda en annan font inom samma familj som användaren HAR installerad.
+Max och min width bestämmer den maximala och minimala bredden på webbsidan.
+Jag satte min-width till 300px för att säkerställa att sidan inte blir för smal på mindre skärmar.
+Max-width satte jag till 100% för att säkerställa att sidan inte sträckers utanför webbläsarens fönster.
 Margin bestämmer avståndet mellan elementets ram och webbläsarens kant. Jag satte den till 0 för att
 ta bort det standard avståndet som webbläsaren lägger till.
 Background color bestämmer en bakgrundsfärg för hela webbplatsen. Jag valde en ljus grå då jag finner det 
@@ -13,7 +16,7 @@ Jag tyckte det gav sidan ett estetiskt tilltalande utseende.*/
 
 body{
     font-family: Arial, sans-serif;
-    min-width: 50px; 
+    min-width: 300px; 
     max-width: 100%;
     margin: 0;
     background-color: #f4f4f4;
